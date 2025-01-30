@@ -34,6 +34,8 @@ def list(request):
             <td class="email">{person.email}</td>
         <tr>
         """
+
+    # End the table, send the response to the request
     response_html += "</table>"
     return HttpResponse(response_html)
 
